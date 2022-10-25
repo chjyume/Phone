@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>地图页面</title>
+		<style>
+    html{
+      width:640px; 
+      height:1030px;
+      margin:0px auto;
+    }
+    body{ 
+      margin:0px auto;
+      width:100%; 
+      height:100%;
+      background-image:url("img/background2.png");
+      background-repeat:no-repeat;
+     	background-size:cover;
+      display:flex;
+      justify-content:center;
+   }
+   .img1{
+   	  position:absolute;
+      margin:0px auto;
+      margin-top:100px;
+	    z-index:-1;
+   }
+   .img2{
+   	  position:absolute;
+      margin:0px auto;
+      margin-top: 400px;  
+	    z-index:-1;
+   }
+   .img3{
+   	  position:absolute;
+      margin:0px auto;
+      margin-top: 750px;
+      margin-left: 200px;  
+	    z-index:1;
+      cursor: pointer;
+   }
+   .img4{
+   	  position:absolute;
+      margin:0px auto;
+      margin-top: 450px;
+      margin-right: 200px;  
+	    z-index:1;
+   }
+   .img5{
+   	  position:absolute;
+      margin:0px auto;
+      margin-top: 340px;
+      margin-left: 340px;  
+	    z-index:1;
+   }
+   </style>
+	</head>
+	<body>
+		<div class="img1"><img src="img/background3.png" width="640px" height="300px" alt=""></div>
+		<div class="img2"><img src="img/background4.png" width="640px"  alt=""></div>
+    <div class="img3"><img src="img/build1.png" width="280px"  alt="" onclick="javascript:location.href='index3.html'"></div>
+    <div class="img4"><img src="img/build2.png" width="300px"  alt=""></div>
+    <div class="img5"><img src="img/build3.png" width="280px"  alt=""></div>
+		
+	</body>
+  <script>
+   $("#imgClick").click(function(){
+    location.href='index3.html';
+   })
+  </script>
+</html>
