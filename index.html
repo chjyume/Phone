@@ -96,7 +96,7 @@
     let n = 0, rootStyle = document.documentElement.style
     
     setInterval(function count () {
-      n = n % 100 + 1
+      n = n + 1
       rootStyle.setProperty('--progress-number', `${n}%`)
       rootStyle.setProperty('--progress-string', `"${n}%"`)
     }, 100)
